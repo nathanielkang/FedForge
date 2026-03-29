@@ -1,10 +1,10 @@
-# FedSynth-Engine
+# FedForge
 
 A scalable, fault-tolerant system for federated tabular synthetic data generation with cross-silo orchestration and differential privacy.
 
 ## Overview
 
-FedSynth-Engine transforms federated synthetic data generation from a research prototype into a production-grade data engineering pipeline. The system orchestrates the full lifecycle: schema discovery, privacy budget allocation, noisy marginal estimation, secure aggregation, diffusion-based synthesis, and quality validation.
+FedForge transforms federated synthetic data generation from a research prototype into a production-grade data engineering pipeline. The system orchestrates the full lifecycle: schema discovery, privacy budget allocation, noisy marginal estimation, secure aggregation, diffusion-based synthesis, and quality validation.
 
 ### Key Features
 
@@ -88,9 +88,6 @@ See `configs/default.yaml` for all available options including:
 - Workload generation parameters
 - Hierarchical aggregation settings
 
-## Author
+## License
 
-Nathaniel Kang  
-School of Computer Science and Engineering, IT College  
-Kyungpook National University  
-natekang@knu.ac.kr
+This code accompanies a manuscript currently under double-blind peer review.
