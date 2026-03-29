@@ -1,0 +1,290 @@
+[
+  {
+    "dataset": "adult",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 3375360,
+    "compressed_bytes": 2904186,
+    "savings_pct": 13.959222127417526,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "adult",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 3375360,
+    "compressed_bytes": 1509516,
+    "savings_pct": 55.278370307167236,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "adult",
+    "variant": "Delta only",
+    "uncompressed_bytes": 3375360,
+    "compressed_bytes": 2074634,
+    "savings_pct": 38.535919131588926,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "adult",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 3375360,
+    "compressed_bytes": 975332,
+    "savings_pct": 71.1043562760713,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "bank",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 3930800,
+    "compressed_bytes": 3464634,
+    "savings_pct": 11.859316169736445,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "bank",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 3930800,
+    "compressed_bytes": 1956894,
+    "savings_pct": 50.216393609443365,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "bank",
+    "variant": "Delta only",
+    "uncompressed_bytes": 3930800,
+    "compressed_bytes": 2549646,
+    "savings_pct": 35.13671517248397,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "bank",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 3930800,
+    "compressed_bytes": 1430420,
+    "savings_pct": 63.609952172585736,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "acs_pums",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 4383680,
+    "compressed_bytes": 3847729,
+    "savings_pct": 12.22605208409373,
+    "num_transmissions": 470,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "acs_pums",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 4383680,
+    "compressed_bytes": 2147174,
+    "savings_pct": 51.01891561427841,
+    "num_transmissions": 470,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "acs_pums",
+    "variant": "Delta only",
+    "uncompressed_bytes": 4383680,
+    "compressed_bytes": 2791784,
+    "savings_pct": 36.31414701803052,
+    "num_transmissions": 470,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "acs_pums",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 4383680,
+    "compressed_bytes": 1528944,
+    "savings_pct": 65.12190670851888,
+    "num_transmissions": 470,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "credit",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 4950720,
+    "compressed_bytes": 4340330,
+    "savings_pct": 12.329317755801172,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "credit",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 4950720,
+    "compressed_bytes": 2398506,
+    "savings_pct": 51.55238025984099,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "credit",
+    "variant": "Delta only",
+    "uncompressed_bytes": 4950720,
+    "compressed_bytes": 3094640,
+    "savings_pct": 37.49111240385237,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "credit",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 4950720,
+    "compressed_bytes": 1657147,
+    "savings_pct": 66.52715160623102,
+    "num_transmissions": 490,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "mushroom",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 267040,
+    "compressed_bytes": 264447,
+    "savings_pct": 0.9710155781905372,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "mushroom",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 267040,
+    "compressed_bytes": 206303,
+    "savings_pct": 22.744532654284,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "mushroom",
+    "variant": "Delta only",
+    "uncompressed_bytes": 267040,
+    "compressed_bytes": 218792,
+    "savings_pct": 18.06770521270221,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "mushroom",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 267040,
+    "compressed_bytes": 188065,
+    "savings_pct": 29.57422109047334,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "shopping",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 1095680,
+    "compressed_bytes": 916518,
+    "savings_pct": 16.35167202102804,
+    "num_transmissions": 390,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "shopping",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 1095680,
+    "compressed_bytes": 622317,
+    "savings_pct": 43.20266866238318,
+    "num_transmissions": 390,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "shopping",
+    "variant": "Delta only",
+    "uncompressed_bytes": 1095680,
+    "compressed_bytes": 713221,
+    "savings_pct": 34.906085718457945,
+    "num_transmissions": 390,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "shopping",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 1095680,
+    "compressed_bytes": 520245,
+    "savings_pct": 52.51852730724299,
+    "num_transmissions": 390,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "diabetes",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 4163280,
+    "compressed_bytes": 3672647,
+    "savings_pct": 11.784770661593747,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "diabetes",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 4163280,
+    "compressed_bytes": 2063593,
+    "savings_pct": 50.43348033281452,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "diabetes",
+    "variant": "Delta only",
+    "uncompressed_bytes": 4163280,
+    "compressed_bytes": 2669457,
+    "savings_pct": 35.88091600853174,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "diabetes",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 4163280,
+    "compressed_bytes": 1492098,
+    "savings_pct": 64.16051766876116,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "covertype",
+    "variant": "Full (no compression)",
+    "uncompressed_bytes": 4515280,
+    "compressed_bytes": 3971886,
+    "savings_pct": 12.03455821122943,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "covertype",
+    "variant": "Quantization only",
+    "uncompressed_bytes": 4515280,
+    "compressed_bytes": 2218081,
+    "savings_pct": 50.876113995145374,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "covertype",
+    "variant": "Delta only",
+    "uncompressed_bytes": 4515280,
+    "compressed_bytes": 2866762,
+    "savings_pct": 36.509762406761034,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  },
+  {
+    "dataset": "covertype",
+    "variant": "Adaptive (all)",
+    "uncompressed_bytes": 4515280,
+    "compressed_bytes": 1578908,
+    "savings_pct": 65.03189170992718,
+    "num_transmissions": 500,
+    "num_skipped": 0
+  }
+]

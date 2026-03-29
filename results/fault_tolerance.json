@@ -1,0 +1,226 @@
+[
+  {
+    "dataset": "adult",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.48661666666666664,
+    "active_parties": 10
+  },
+  {
+    "dataset": "adult",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.501877380952381,
+    "active_parties": 9
+  },
+  {
+    "dataset": "adult",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.5065726190476191,
+    "active_parties": 8
+  },
+  {
+    "dataset": "adult",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.494202380952381,
+    "active_parties": 7
+  },
+  {
+    "dataset": "bank",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.16848333333333335,
+    "active_parties": 10
+  },
+  {
+    "dataset": "bank",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.16135222222222226,
+    "active_parties": 9
+  },
+  {
+    "dataset": "bank",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.17194555555555555,
+    "active_parties": 8
+  },
+  {
+    "dataset": "bank",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.1707177777777778,
+    "active_parties": 7
+  },
+  {
+    "dataset": "acs_pums",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.17624222222222222,
+    "active_parties": 10
+  },
+  {
+    "dataset": "acs_pums",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.17622333333333332,
+    "active_parties": 9
+  },
+  {
+    "dataset": "acs_pums",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.17528666666666667,
+    "active_parties": 8
+  },
+  {
+    "dataset": "acs_pums",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.17233555555555555,
+    "active_parties": 7
+  },
+  {
+    "dataset": "credit",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.17780227272727273,
+    "active_parties": 10
+  },
+  {
+    "dataset": "credit",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.17047045454545454,
+    "active_parties": 9
+  },
+  {
+    "dataset": "credit",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.1745818181818182,
+    "active_parties": 8
+  },
+  {
+    "dataset": "credit",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.1791784090909091,
+    "active_parties": 7
+  },
+  {
+    "dataset": "mushroom",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.3992973588471534,
+    "active_parties": 10
+  },
+  {
+    "dataset": "mushroom",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.4008175194897237,
+    "active_parties": 9
+  },
+  {
+    "dataset": "mushroom",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.3979168627450981,
+    "active_parties": 8
+  },
+  {
+    "dataset": "mushroom",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.3952083849121978,
+    "active_parties": 7
+  },
+  {
+    "dataset": "shopping",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.9257037037037037,
+    "active_parties": 10
+  },
+  {
+    "dataset": "shopping",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.9274444444444443,
+    "active_parties": 9
+  },
+  {
+    "dataset": "shopping",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.9280000000000002,
+    "active_parties": 8
+  },
+  {
+    "dataset": "shopping",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.925074074074074,
+    "active_parties": 7
+  },
+  {
+    "dataset": "diabetes",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.17537395833333333,
+    "active_parties": 10
+  },
+  {
+    "dataset": "diabetes",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.1706697916666667,
+    "active_parties": 9
+  },
+  {
+    "dataset": "diabetes",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.16884687499999998,
+    "active_parties": 8
+  },
+  {
+    "dataset": "diabetes",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.16234583333333333,
+    "active_parties": 7
+  },
+  {
+    "dataset": "covertype",
+    "drop_rate": 0.0,
+    "num_dropped": 0,
+    "marginal_tv_avg": 0.17474375,
+    "active_parties": 10
+  },
+  {
+    "dataset": "covertype",
+    "drop_rate": 0.1,
+    "num_dropped": 1,
+    "marginal_tv_avg": 0.16510416666666666,
+    "active_parties": 9
+  },
+  {
+    "dataset": "covertype",
+    "drop_rate": 0.2,
+    "num_dropped": 2,
+    "marginal_tv_avg": 0.16994374999999998,
+    "active_parties": 8
+  },
+  {
+    "dataset": "covertype",
+    "drop_rate": 0.3,
+    "num_dropped": 3,
+    "marginal_tv_avg": 0.17271458333333334,
+    "active_parties": 7
+  }
+]

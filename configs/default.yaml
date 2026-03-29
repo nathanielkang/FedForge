@@ -1,0 +1,75 @@
+system:
+  num_parties: 10
+  random_seed: 42
+  device: "cpu"
+  checkpoint_dir: "checkpoints"
+  results_dir: "results"
+
+privacy:
+  epsilon: 1.0
+  delta: 1.0e-5
+  mechanism: "gaussian"
+  streaming_budget_fraction: 0.1
+
+communication:
+  quantization_bits: 8
+  delta_threshold: 1.0e-4
+  enable_delta_encoding: true
+  enable_quantization: true
+  enable_sparse: true
+  compression_level: 3
+
+coordinator:
+  heartbeat_interval_sec: 30
+  stage_timeout_sec: 300
+  staleness_decay: 0.95
+  max_stale_rounds: 10
+  checkpoint_stages: [3, 4, 5]
+
+synthesis:
+  diffusion_steps: 100
+  beta_start: 1.0e-4
+  beta_end: 0.2
+  beta_schedule: "linear"
+  hidden_dim: 256
+  num_layers: 4
+  learning_rate: 1.0e-3
+  num_epochs: 200
+  batch_size: 4096
+  workload_weight: 0.5
+  soft_histogram_tau_scale: 0.5
+  num_synthetic_records: -1  # -1 means match real data size
+
+workload:
+  num_queries: 50
+  max_way: 3
+  min_way: 2
+
+hierarchical:
+  enable: true
+  num_clusters: -1  # -1 means auto = ceil(sqrt(K))
+  cluster_method: "latency"
+
+streaming:
+  enable: false
+  finetune_epochs: 20
+  regularization_mu: 0.3
+
+evaluation:
+  ml_classifiers:
+    - "logistic_regression"
+    - "random_forest"
+    - "gradient_boosting"
+    - "mlp"
+    - "decision_tree"
+  num_cv_folds: 5
+
+datasets:
+  - "adult"
+  - "bank"
+  - "acs_pums"
+  - "credit"
+  - "mushroom"
+  - "shopping"
+  - "diabetes"
+  - "covertype"

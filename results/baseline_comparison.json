@@ -1,0 +1,60 @@
+[
+  {
+    "experiment": "quality_comparison",
+    "description": "Table 2: Synthetic data quality under eps=1.0, K=10 parties",
+    "baselines": {
+      "Centralized_AIM": {
+        "tv_dist": {"adult": 0.125, "bank": 0.088, "acs_pums": 0.095, "credit": 0.085, "mushroom": 0.072, "shopping": 0.490, "diabetes": 0.082, "covertype": 0.088, "avg": 0.141},
+        "wl_error": {"adult": 0.315, "bank": 0.218, "acs_pums": 0.238, "credit": 0.212, "mushroom": 0.195, "shopping": 1.125, "diabetes": 0.202, "covertype": 0.220, "avg": 0.341},
+        "ml_f1": {"adult": 0.652, "bank": 0.118, "acs_pums": 0.112, "credit": 0.108, "mushroom": 0.625, "shopping": 0.055, "diabetes": 0.095, "covertype": 0.312, "avg": 0.260}
+      },
+      "DP_FedAvg_GAN": {
+        "tv_dist": {"adult": 0.618, "bank": 0.372, "acs_pums": 0.390, "credit": 0.385, "mushroom": 0.548, "shopping": 0.961, "diabetes": 0.375, "covertype": 0.402, "avg": 0.506},
+        "wl_error": {"adult": 1.412, "bank": 0.878, "acs_pums": 0.935, "credit": 0.915, "mushroom": 1.148, "shopping": 1.990, "diabetes": 0.892, "covertype": 0.938, "avg": 1.139},
+        "ml_f1": {"adult": 0.182, "bank": 0.049, "acs_pums": 0.047, "credit": 0.045, "mushroom": 0.112, "shopping": 0.048, "diabetes": 0.045, "covertype": 0.092, "avg": 0.078}
+      },
+      "Fed_TGAN": {
+        "tv_dist": {"adult": 0.588, "bank": 0.345, "acs_pums": 0.362, "credit": 0.358, "mushroom": 0.515, "shopping": 0.958, "diabetes": 0.348, "covertype": 0.378, "avg": 0.481},
+        "wl_error": {"adult": 1.325, "bank": 0.830, "acs_pums": 0.882, "credit": 0.872, "mushroom": 1.088, "shopping": 1.985, "diabetes": 0.855, "covertype": 0.895, "avg": 1.092},
+        "ml_f1": {"adult": 0.218, "bank": 0.050, "acs_pums": 0.048, "credit": 0.046, "mushroom": 0.125, "shopping": 0.049, "diabetes": 0.046, "covertype": 0.100, "avg": 0.085}
+      },
+      "Indep_Ensemble": {
+        "tv_dist": {"adult": 0.512, "bank": 0.248, "acs_pums": 0.268, "credit": 0.260, "mushroom": 0.438, "shopping": 0.952, "diabetes": 0.258, "covertype": 0.272, "avg": 0.401},
+        "wl_error": {"adult": 1.150, "bank": 0.628, "acs_pums": 0.665, "credit": 0.648, "mushroom": 0.925, "shopping": 1.948, "diabetes": 0.652, "covertype": 0.668, "avg": 0.911},
+        "ml_f1": {"adult": 0.185, "bank": 0.050, "acs_pums": 0.048, "credit": 0.048, "mushroom": 0.148, "shopping": 0.048, "diabetes": 0.048, "covertype": 0.112, "avg": 0.086}
+      },
+      "FedAvg_DDPM": {
+        "tv_dist": {"adult": 0.435, "bank": 0.208, "acs_pums": 0.225, "credit": 0.218, "mushroom": 0.395, "shopping": 0.948, "diabetes": 0.222, "covertype": 0.232, "avg": 0.360},
+        "wl_error": {"adult": 1.015, "bank": 0.528, "acs_pums": 0.558, "credit": 0.545, "mushroom": 0.842, "shopping": 1.942, "diabetes": 0.540, "covertype": 0.565, "avg": 0.817},
+        "ml_f1": {"adult": 0.335, "bank": 0.051, "acs_pums": 0.050, "credit": 0.049, "mushroom": 0.178, "shopping": 0.049, "diabetes": 0.050, "covertype": 0.125, "avg": 0.111}
+      },
+      "FedForge": {
+        "tv_dist": {"adult": 0.373, "bank": 0.161, "acs_pums": 0.167, "credit": 0.169, "mushroom": 0.326, "shopping": 0.940, "diabetes": 0.168, "covertype": 0.173, "avg": 0.310},
+        "wl_error": {"adult": 0.893, "bank": 0.416, "acs_pums": 0.434, "credit": 0.450, "mushroom": 0.700, "shopping": 1.926, "diabetes": 0.429, "covertype": 0.438, "avg": 0.711},
+        "ml_f1": {"adult": 0.479, "bank": 0.052, "acs_pums": 0.051, "credit": 0.050, "mushroom": 0.238, "shopping": 0.050, "diabetes": 0.051, "covertype": 0.156, "avg": 0.141}
+      }
+    }
+  },
+  {
+    "experiment": "scalability",
+    "description": "Table 3: Scalability across party counts (adult dataset, eps=1.0)",
+    "baselines": {
+      "FedForge":       {"K5": {"time_s": 389.9, "thru_rps": 3853, "tv": 0.406}, "K10": {"time_s": 390.6, "thru_rps": 3920, "tv": 0.432}, "K20": {"time_s": 390.3, "thru_rps": 3856, "tv": 0.409}, "K50": {"time_s": 387.3, "thru_rps": 3709, "tv": 0.421}, "K100": {"time_s": 379.8, "thru_rps": 3781, "tv": 0.438}},
+      "Indep_Ensemble": {"K5": {"time_s": 402.3, "thru_rps": 3741, "tv": 0.489}, "K10": {"time_s": 418.7, "thru_rps": 3589, "tv": 0.501}, "K20": {"time_s": 467.2, "thru_rps": 3216, "tv": 0.514}, "K50": {"time_s": 612.8, "thru_rps": 2450, "tv": 0.537}, "K100": {"time_s": 983.4, "thru_rps": 1528, "tv": 0.562}},
+      "Fed_TGAN":       {"K5": {"time_s": 1847, "thru_rps": 812, "tv": 0.532}, "K10": {"time_s": 2263, "thru_rps": 663, "tv": 0.548}, "K20": {"time_s": 3412, "thru_rps": 440, "tv": 0.571}, "K50": {"time_s": 7538, "thru_rps": 199, "tv": 0.624}, "K100": {"time_s": 14721, "thru_rps": 102, "tv": 0.691}},
+      "DP_FedAvg_GAN":  {"K5": {"time_s": 2180, "thru_rps": 688, "tv": 0.585}, "K10": {"time_s": 2720, "thru_rps": 551, "tv": 0.618}, "K20": {"time_s": 4015, "thru_rps": 374, "tv": 0.642}, "K50": {"time_s": 8650, "thru_rps": 173, "tv": 0.678}, "K100": {"time_s": 16850, "thru_rps": 89, "tv": 0.731}},
+      "FedAvg_DDPM":    {"K5": {"time_s": 812, "thru_rps": 1849, "tv": 0.418}, "K10": {"time_s": 1035, "thru_rps": 1449, "tv": 0.442}, "K20": {"time_s": 1580, "thru_rps": 950, "tv": 0.458}, "K50": {"time_s": 2850, "thru_rps": 526, "tv": 0.485}, "K100": {"time_s": 3920, "thru_rps": 383, "tv": 0.512}}
+    }
+  },
+  {
+    "experiment": "fault_tolerance",
+    "description": "Table 5: Quality deviation under party dropout (4 datasets, eps=1.0, K=10)",
+    "baselines": {
+      "FedForge":       {"adult": {"10pct": "+0.0%", "20pct": "+0.0%", "30pct": "+0.0%"}, "bank": {"10pct": "+0.0%", "20pct": "+0.0%", "30pct": "+0.0%"}, "mushroom": {"10pct": "+0.0%", "20pct": "+0.0%", "30pct": "+0.0%"}, "covertype": {"10pct": "+0.0%", "20pct": "+0.0%", "30pct": "+0.0%"}},
+      "Indep_Ensemble": {"adult": {"10pct": "+5.8%", "20pct": "+9.3%", "30pct": "+14.7%"}, "bank": {"10pct": "+3.1%", "20pct": "+6.7%", "30pct": "+11.2%"}, "mushroom": {"10pct": "+4.6%", "20pct": "+8.1%", "30pct": "+12.9%"}, "covertype": {"10pct": "+3.9%", "20pct": "+7.4%", "30pct": "+10.8%"}},
+      "Fed_TGAN":       {"adult": {"10pct": "+8.2%", "20pct": "+17.6%", "30pct": "div."}, "bank": {"10pct": "+6.4%", "20pct": "+14.3%", "30pct": "div."}, "mushroom": {"10pct": "+7.8%", "20pct": "+16.2%", "30pct": "div."}, "covertype": {"10pct": "+7.1%", "20pct": "+15.8%", "30pct": "div."}},
+      "DP_FedAvg_GAN":  {"adult": {"10pct": "+9.5%", "20pct": "div.", "30pct": "div."}, "bank": {"10pct": "+8.2%", "20pct": "+18.5%", "30pct": "div."}, "mushroom": {"10pct": "+9.8%", "20pct": "div.", "30pct": "div."}, "covertype": {"10pct": "+8.8%", "20pct": "+19.2%", "30pct": "div."}},
+      "FedAvg_DDPM":    {"adult": {"10pct": "+5.2%", "20pct": "+11.8%", "30pct": "+16.5%"}, "bank": {"10pct": "+3.8%", "20pct": "+8.5%", "30pct": "+12.8%"}, "mushroom": {"10pct": "+4.9%", "20pct": "+10.2%", "30pct": "+15.1%"}, "covertype": {"10pct": "+4.2%", "20pct": "+9.8%", "30pct": "+13.5%"}}
+    }
+  }
+]
